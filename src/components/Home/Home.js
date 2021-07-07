@@ -1,10 +1,16 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+import Main from './Main/Main';
 
 const Home = () => {
     return (
-        <div>
-            <h3>Home</h3>
-        </div>
+        <Container fluid className="p-1 px-lg-3 bg-dark">
+            <Header />
+            <Main />
+            <Footer />
+        </Container>
     );
 };
 

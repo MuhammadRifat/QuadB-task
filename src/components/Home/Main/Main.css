@@ -1,0 +1,28 @@
+.color-light{
+    color: rgb(172, 170, 170);
+}
+
+.color-cyan{
+    color: cyan;
+}
+
+.font-lg{
+    font-size: 60pt;
+}
+
+.font-md{
+    font-size: 20pt;
+}
+
+.table-row{
+    background-color: rgb(82, 82, 82);
+    margin-top: 10px;
+}
+
+.ad1{
+    border-radius: 20px;
+}
+
+.ad2{
+    border-radius: 40px;
+}
