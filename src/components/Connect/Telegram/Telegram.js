@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { theme } from '../../../App';
 import Footer from '../../Home/Footer/Footer';
 import Header from '../../Home/Header/Header';
 
 const Telegram = () => {
+    const [darkMode, setDarkMode] = useContext(theme);
+
     return (
-        <Container fluid className=" bg-dark">
-            <Header />
-            <Row className="justify-content-center text-center font-weight-bold text-white mt-2">
+        <Container fluid>
+            {/* Header */}
+            <Header isDisplay={false} />
+
+            {/* Telegram Page body */}
+            <Row className={`justify-content-center text-center font-weight-bold mt-2 ${darkMode && "text-white"}`}>
                 <Col lg={8}>
                     <h2>Connect Telegram</h2>
                     <h4 className="mt-4">Add bot to your group</h4>
@@ -19,7 +25,7 @@ const Telegram = () => {
                         4. Search @HodlInfoBot and click it.<br />
 
                         <h5 className="mt-4">Automatic:</h5>
-                        Go to : <a className="text-white text-decoration-none" href="https://t.me/HodlInfoBot?startgroup=true" target="_blank">https://t.me/HodlInfoBot?startgroup=true</a>
+                        Go to : <a className="text-decoration-none" href="https://t.me/HodlInfoBot?startgroup=true" target="_blank">https://t.me/HodlInfoBot?startgroup=true</a>
 
                         <h4 className="mt-4">Chat with the bot</h4>
 
@@ -34,7 +40,6 @@ const Telegram = () => {
                     </p>
                 </Col>
             </Row>
-            <hr />
             <Footer />
         </Container>
     );

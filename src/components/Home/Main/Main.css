@@ -3,20 +3,19 @@
 }
 
 .color-cyan{
-    color: cyan;
+    color: rgb(0, 204, 204);
 }
 
 .font-lg{
     font-size: 60pt;
 }
 
-.font-md{
-    font-size: 20pt;
+.bg-gray{
+    background-color: rgb(95, 90, 90);
 }
 
-.table-row{
-    background-color: rgb(82, 82, 82);
-    margin-top: 10px;
+.bg-lighter{
+    background-color: rgb(241, 241, 241);
 }
 
 .ad1{
@@ -26,3 +25,14 @@
 .ad2{
     border-radius: 40px;
 }
+
+.font-md{
+    font-size: 20pt;
+}
+
+
+@media only screen and (max-width: 920px) {
+    .font-md {
+      font-size: 12pt;
+    }
+  }

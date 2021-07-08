@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './Timer.css';
 
+// Timer for loading new data
 const Timer = () => {
     const [timer, setTimer] = useState(0);
+
     useEffect(() => {
         setTimeout(() => {
             if (timer > 0) {
@@ -16,7 +18,7 @@ const Timer = () => {
 
     return (
         <div className="timer">
-            <h5 className="text-white">{timer}</h5>
+            <h5>{timer}</h5>
         </div>
 
     );
