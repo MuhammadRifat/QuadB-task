@@ -1,3 +1,3 @@
-## Website Link
+## Live Link
 
 https://hodlinfo.netlify.app/
