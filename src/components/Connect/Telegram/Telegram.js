@@ -40,7 +40,6 @@ const Telegram = () => {
                     </p>
                 </Col>
             </Row>
-            <Footer />
         </Container>
     );
 };
